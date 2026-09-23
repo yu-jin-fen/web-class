@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jazz Night 2026</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #333;
+        }
+
+        h1 {
+            color: #8B263E;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #8B263E;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .date-time {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* 圖片與文字連結並排容器 */
+        .poster-container {
+            display: flex;
+            align-items: center; 
+            gap: 20px;           
+            margin-bottom: 25px;
+        }
+
+        .poster-link {
+            display: inline-block;
+            line-height: 0; /* 避免圖片下方產生微小間隙 */
+            text-decoration: none; /* 移除外層連結底線 */
+        }
+
+        .poster-img {
+            max-width: 320px;
+            display: block;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .del-price {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .del-time {
+            text-decoration: line-through;
+            color: #c0392b;
+        }
+
+        .highlight-green {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* 連結偽類樣式 */
+        a:link {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: gray;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: pink;
+            background-color: yellow;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JAZZ NIGHT 2026</h1>
+    <p class="subtitle">Live Music & Dance</p>
+    <p class="date-time">Saturday, October 10, 2026<br>7:30 PM - 10:30 PM</p>
+
+    <!-- 圖片已用 <a> 標籤包覆，點擊即可開啟連結 -->
+    <div class="poster-container">
+        <a href="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=1200" target="_blank" class="poster-link">
+            <img class="poster-img" src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=500" alt="Jazz Night Poster">
+        </a>
+        <a href="https://example.com" target="_blank">View Poster Full Size</a>
+    </div>
+
+    <h2>About the Event</h2>
+    <p>Join us for an evening of live jazz, dancing, and good music.</p>
+    <p>Ticket: <span class="del-price">$30</span><br>
+       Special Price: <strong>$20</strong>
+    </p>
+    <p>We originally planned to start at <span class="del-time">8:00 PM</span> <span class="highlight-green">7:30 PM</span>.</p>
+
+    <h2>More Information</h2>
+    <p><a href="https://example.com" target="_blank">Visit our website</a></p>
+    <p><a href="mailto:jazznight@example.com">Email us</a></p>
+    <p><a href="tel:123456789">Call us</a></p>
+
+    <h2>Contact</h2>
+    <p>
+        Jazz Night Taipei<br>
+        123 Music Street, Taipei<br>
+        <a href="mailto:jazznight@example.com">jazznight@example.com</a>
+    </p>
+
+</body>
+</html>
